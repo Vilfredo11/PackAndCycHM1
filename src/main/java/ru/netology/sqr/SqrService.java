@@ -1,24 +1,14 @@
 package ru.netology.sqr;
 
 public class SqrService {
-    public static void main(String[] args) {
-
-
-        int numberOne = 10;
-        int numberTwo = 99;
+    public int sqr(int max, int min) {
         int counter = 0;
-
-        for (int i = 10; i < numberTwo; i++) {
-            if (i * i > numberOne)
-                if (i * i < numberTwo) {
-
-                    counter = counter + 1;
-                    System.out.println(" Корень из " + i * i + " равен " + i);
-                }
-
+        for (int i = 10; i <= 99; i++) {
+            if (i * i >= min && i * i <= max) {
+                counter++;
+            }
         }
-        System.out.println(" Количество  " + counter);
+        return counter;
     }
-
-
 }
+

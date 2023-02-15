@@ -1,24 +1,16 @@
 package ru.netology.sqr;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class SqrServiceTest {
-    public static void main(String[] args) {
+    @Test
+    public void shouldCalcExact() {
+        SqrService service = new SqrService();
+        int expected = 3;
+        int actual = service.sqr(300,200);
 
-
-        int numberOne = 10;
-        int numberTwo = 99;
-        int counter = 0;
-
-        for (int i = 10; i < numberTwo; i++) {
-            if (i * i > numberOne)
-                if (i * i < numberTwo) {
-
-                    counter = counter + 1;
-                    System.out.println(" Корень из " + i * i + " равен " + i);
-                }
-
-        }
-        System.out.println(" Количество  " + counter);
+        Assertions.assertEquals(expected,actual);
     }
-
-
 }
+

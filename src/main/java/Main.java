@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
         int numberOne = 10;
         int numberTwo = 99;
         int counter = 0;
